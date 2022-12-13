@@ -152,6 +152,11 @@ color: var(--mol-color);
 }
 
 .imeges{color: var(--imeg);}
+
+
+.imeges:hover{fill: var(--mol-color);}
+
+
 .icon-meil{margin-right:10px;}
 .icon-tel{margin-left: 30px;}
 .tel {
@@ -249,30 +254,26 @@ color: var(--mol-color);
     color:var(--mel-color);
     max-width: 270px;
     height: 72px;
-    
-    
-
-}
-.vektor{display: flex;
-    align-items: center;
-    justify-content: center;
 
 }
 
-.blok{ width: 270px;
+.vector{display: flex;
+gap: 30px;}
+.vektor-blok{flex-basis:calc((100%-4*30px)/4);}
+
+.blok{
+    display: flex;
+    width: 270px;
     height: 120px;
-    background: #F5F4FA;
-    border-radius: 4px;}
-
-
-
-.vektor-imeg{display: flex;
-    align-items: center;
+    background-color: #757575;
+    border-radius: 4px;
     justify-content: center;
-
-
-
+    align-items: center;
+    margin-bottom: 30px;
 }
+
+
+
 /*----Sektion diy3----*/
 .section nov{ padding-bottom: 0;}
 
@@ -382,7 +383,8 @@ color: var(--mol-color);
     width: 20px;
     height: 20px;
 }
-
+.kart-kom:hover,
+.kart-kom:focus{color: #2196F3;}
 
 
 
@@ -406,7 +408,8 @@ color: var(--mol-color);
 
 .header{border-bottom: 1px solid var(--border-color);}
 
-.bord{
+.artik:hover
+{
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .visually-hidden
@@ -591,12 +594,12 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 .socset {
     width: 20px;
     height: 20px;
-    fill: var(--mail-color);
+    fill:var(--mol-color);
 }
 
-.kart:hover,
-:focus {
-    color: var(--focus-color);
+.kart.socset:hover,
+.kart.socset:focus {
+    fill:  var(--focus-color);
 }
 
 .socset:hover,
