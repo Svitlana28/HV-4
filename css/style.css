@@ -12,9 +12,10 @@
     --focus-color:rgba(33, 150, 243, 1);
     --becgraud-color:rgba(47, 48, 58, 1);
     --tel-colr: #757575;
-    --imeg:rgba(255, 255, 255, 0.1);
+    --heder-ikon: rgba(117, 117, 117, 1);
     --border-color:rgba(236, 236, 236, 1);
     --socset-color:rgba(175, 177, 184, 1);
+    --perebagu :rgba(245, 244, 250, 1);
     }
 p,
 ul,
@@ -78,11 +79,8 @@ img {
     display: flex;
     align-items: center;
     margin: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
     
 }
-
 .logo{
     font-family: Raleway;
     font-weight: 700;
@@ -105,7 +103,11 @@ img {
     letter-spacing: 0.02em;
     color: var(--meil-color);
     align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
 
+    
 }
 
 .heder .link.current {
@@ -117,7 +119,7 @@ img {
 color: var(--mol-color);
 }
 
-.stadi {
+.stadi{
     color: var(--meil-color);
     cursor: pointer;
     margin-left: 93px;
@@ -130,6 +132,7 @@ color: var(--mol-color);
     color: var(--focus-color);
 }
 .stadi:current
+
 
 .header .link {
     font-weight: 500;
@@ -151,14 +154,19 @@ color: var(--mol-color);
     margin-right: 344px;
 }
 
-.imeges{color: var(--imeg);}
 
 
-.imeges:hover{fill: var(--mol-color);}
+.icon-meil:hover{fill: var(--mol-color);}
+.icon-tel:hover{fill: var(--mol-color);}
+.icon-meil {
+    margin-right: 10px;
+    fill: var(--heder-ikon);
+}
 
-
-.icon-meil{margin-right:10px;}
-.icon-tel{margin-left: 30px;}
+.icon-tel {
+    margin-left: 30px;
+    fill: var(--heder-ikon);
+}
 .tel {
     font-weight: 500;
     line-height: 1.14;
@@ -167,8 +175,8 @@ color: var(--mol-color);
     margin-left: 10px;
 
 }
-.tel :hover
-.tel :focus{color: var(--focus-color);}
+.tel:hover,
+.tel:focus{color: var(--focus-color);}
 
 .meil{
         font-weight: 500;
@@ -177,7 +185,7 @@ color: var(--mol-color);
         color: var(--mel-color);
     
     }
-    .meil:hover
+    .meil:hover,
     .meil:focus{color: var(--focus-color);}
 
 
@@ -257,22 +265,25 @@ color: var(--mol-color);
 
 }
 
-.vector{display: flex;
-gap: 30px;}
-.vektor-blok{flex-basis:calc((100%-4*30px)/4);}
+.vector {
+    display: flex;
+    gap: 30px;
+}
 
-.blok{
+.vektor-blok {
+    flex-basis: calc((100%-4*30px)/4);
+}
+
+.blok {
     display: flex;
     width: 270px;
     height: 120px;
-    background-color: #757575;
+    background-color: var(--perebagu);
     border-radius: 4px;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
 }
-
-
 
 /*----Sektion diy3----*/
 .section nov{ padding-bottom: 0;}
@@ -287,7 +298,6 @@ gap: 30px;}
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    
     margin: auto;
     text-align: center;
     margin-bottom: 50px;
@@ -368,15 +378,17 @@ gap: 30px;}
     gap: 10px;
     padding-left: 32px;
 }
-
+.aktiv-imegs:hover
 
 .aktiv-imegs {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     width: 100%;
     height: 100%;
 }
+
 
 .socset-com {
     fill: var(--socset-color);
@@ -397,10 +409,42 @@ gap: 30px;}
 
 /*--------section5----*/
 
+.klient-box {
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
 
 
+.klient-imeg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    Height: 92px;
+    border: 1px solid var(--socset-color);
+    flex-basis: calc((100%-5*30px)6);
+}
 
+.post-klient {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height:1.16;
+    letter-spacing: 0.03em;
+}
+.klient-aktiv{fill:var(--socset-color);}
 
+.button-aktiv:focus{color: var(--focus-color);
+
+}
+.post-klient :hover,
+.post-klient footer{color: var(--focus-color);}
 
 
 
@@ -560,6 +604,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 
 
 .come{margin-left: 90px;}
+
+
 .footer-cont{
     display: flex;
     margin: o auto;}
@@ -586,7 +632,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background:rgba(255, 255, 255, 0.1);
     gap: 10px;
 
 }
@@ -594,12 +640,12 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 .socset {
     width: 20px;
     height: 20px;
-    fill:var(--mol-color);
+    fill:var(--mail-color);
 }
 
-.kart.socset:hover,
-.kart.socset:focus {
-    fill:  var(--focus-color);
+.kart:hover,
+.kart:focus{
+background-color:  var(--focus-color);
 }
 
 .socset:hover,
